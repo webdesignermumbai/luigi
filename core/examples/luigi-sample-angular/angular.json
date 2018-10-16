@@ -21,6 +21,7 @@
               "src/favicon.ico",
               "src/index.html",
               "src/logout.html",
+              "src/styles.css",
               {
                 "glob": "fundamental-ui.min.css",
                 "input": "node_modules/fundamental-ui/dist",
