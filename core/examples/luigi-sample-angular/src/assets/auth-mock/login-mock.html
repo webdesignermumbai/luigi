@@ -1,82 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Luigi Mock Identity Provider</title>
-  <style type="text/css">
-    body {
-      background-color: #f3f4f5
-    }
-
-    .form-input {
-      border-radius: 4px;
-      border: 1px solid #CCC;
-      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-      color: #666;
-      display: block;
-      font-size: 14px;
-      height: 20px;
-      line-height: 1.42857143;
-      margin: auto;
-      padding: 6px 12px;
-      width: 200px;
-    }
-
-    #login-button {
-      display: block;
-      margin: auto;
-      cursor: pointer;
-      border-radius: 4px;
-      font-size: 1rem;
-      background-color: #ffffff;
-      color: #0a6ed1;
-      border: solid 1px #0a6ed1;
-      padding: 0 10px;
-      height: 36px;
-      max-height: 36px;
-      min-width: 36px;
-      transition: all 0.125s ease-in;
-    }
-
-    #login-button:hover {
-      border-color: #085caf;
-      color: #085caf;
-      box-shadow: 0 0 0 1px #0a6ed1;
-    }
-
-    .panel {
-      background-color: #ffffff;
-      box-shadow: 0 5px 20px 0 rgba(50, 54, 58, 0.08);
-      border-radius: 4px;
-      border: none;
-      width: 50%;
-      margin: auto;
-      min-width: 270px;
-      padding: 15px;
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 1.42857143rem;
-      line-height: 1.33333333;
-      font-weight: 400;
-      display: block;
-      margin-bottom: 20px;
-      color: #32363a;
-      font-family: '72', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-
-    }
-  </style>
+  <title>Login - Saas Backoffice</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/app.css">
 </head>
 <body>
 
-<div class="panel">
-  <h1>Login to Luigi sample app</h1>
-  <form>
-    <input type="text" class="form-input" value="LuigiUsername"><br>
-    <input type="password" class="form-input" value="LuigiPassword"><br>
-    <button id="login-button">Login</button>
-  </form>
-</div>
+    <div class="card card--login mt-5 form-signin" style="margin:auto;width: 600px;">
+        <div class="card-body">
+          <div class="login-logo text-center">
+            <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+              y="0px" width="100px" height="110px" viewBox="0 0 100 110" style="enable-background:new 0 0 100 110;"
+              xml:space="preserve">
+              <polyline style="fill:none;stroke:#000000;stroke-width:3.2981;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"
+                points="
+              70.577,106 96.453,91.059 96.45,19.31 70.577,4.372 " />
+              <polyline style="fill:none;stroke:#000000;stroke-width:3.2981;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"
+                points="
+              29.894,106 2.999,91.059 3.003,19.31 29.894,4.372 " />
+              <polygon style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"
+                points="
+              49.677,84.229 24.515,69.703 24.513,40.649 49.676,26.121 74.838,40.646 74.838,69.699 " />
+              <line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"
+                x1="49.688" y1="83.781" x2="49.688" y2="54.89" />
+              <line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"
+                x1="49.355" y1="55.365" x2="74.68" y2="40.764" />
+              <line style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"
+                x1="24.923" y1="40.808" x2="49.99" y2="55.286" />
+            </svg>
+    
+            <h1 class="signin-heading mt-2 mb-4">BACKOFFICE</h1>
+          </div>
+          <form>
+          <div class="form-label-group">
+            <input type="email" id="username" class="form-control" placeholder="Email address" required autofocus  value="LuigiUsername">
+            <label for="username">Email address</label>
+          </div>
+    
+          <div class="form-label-group">
+            <input type="password" id="password" class="form-control" placeholder="Password" required  value="LuigiPassword">
+            <label for="password">Password</label>
+          </div>
+    
+          <a href="#" class="text-secondary">Forgot your password?</a>
+          <button type="submit" class="btn btn-lg btn-block btn-hover color-3"  id="login-button">Sign In</button>
+        </form>
+        </div>
+      </div>
 <script>
   window.onload = function() {
     const redirectUrl = decodeURIComponent(window.location.href.match(/redirect_uri=(.*?)(&|$)/)[1]);

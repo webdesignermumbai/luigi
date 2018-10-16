@@ -1,6 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~@kyma-project/luigi-core/luigi.css';
-
 body {
   padding: 0;
   margin: 0;
@@ -9,4 +7,32 @@ body {
 
 .fd-panel {
   padding: 15px;
+}
+
+/* Header customization */
+.fd-global-nav .fd-global-nav__logo {
+  background: url('/assets/img/SAAS_Logo_Rechteck_300_120_retina.png') no-repeat 0 0;
+}
+.fd-global-nav__product-name,.fd-global-nav__product-name a {
+  color: #97a3af;font-size: 20px;
+}
+.fd-global-nav__product-name a{
+  position: relative;
+  font-weight: 400;
+}
+.fd-global-nav__product-name a::before {
+  content: "";
+  height: 12px;
+  border-left: #ccc solid 1px;
+  left: -12px;
+  position: absolute;
+  width: 2px;
+  top: 50%;
+  margin-top: -6px;
+}
+@media screen and (min-width: 1024px){
+  .fd-global-nav .fd-global-nav__logo { 
+    background-size: auto 27px;
+    width: 140px;
+  }
 }
