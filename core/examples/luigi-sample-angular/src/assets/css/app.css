@@ -38,8 +38,6 @@ body {
   text-align: left;
 }
 
-
-
 .form-label-group>label {
   position: absolute;
   top: 5px;
@@ -56,7 +54,9 @@ body {
   border-radius: 0 0 0;
   transition: all .1s ease-in-out;
 }
-
+.form-label-group input:focus + label {
+  color: #0f6eca;
+}
 .form-label-group input::-webkit-input-placeholder {
   color: transparent;
 }
@@ -90,7 +90,23 @@ body {
   font-weight: bold;
   top:0;
 }
-
+.form-label-group--eye .eye-icon {
+  position: absolute;
+  right: 0px;
+  bottom:10px;
+  color:#a9a8a8;
+  cursor: pointer;
+  z-index: 11;
+}
+.form-label-group--eye .feather-eye-off {
+  display: none;
+}
+.form-label-group--eye.eyeoff .feather-eye {
+  display: none;
+}
+.form-label-group--eye.eyeoff .feather-eye-off {
+  display: block;
+}
 /* Fallback for Edge
   -------------------------------------------------- */
 @supports (-ms-ime-align: auto) {
@@ -162,10 +178,8 @@ input:focus {
   border: 0 none;
 }
 
-button.signin-btn {
-  margin-top: 15px;
-  font-weight: 600;
-  font-family: 'Open Sans', sans-serif;
+button.signin-btn.disabled .feather-log-in {
+  display: none;
 }
 
 .btn-hover {
@@ -255,7 +269,9 @@ button.signin-btn {
   background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);
   box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
 }
-
+.btn.disabled, .btn:disabled {
+  background: #ccc !important;
+}
 .site-header {
   background-color: #27394f;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
