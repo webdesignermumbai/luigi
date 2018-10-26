@@ -290,7 +290,7 @@ Luigi.setConfig({
               category: 'Overview',
               pathSegment: 'velocity',
               label: 'Velocity Templates',
-              viewUrl: '/assets/sampleexternal.html#velocity'
+              viewUrl: 'http://ssvnodemean.herokuapp.com/'
             },
             {
               category: 'Overview',
@@ -308,13 +308,13 @@ Luigi.setConfig({
               category: 'Overview',
               pathSegment: 'brands',
               label: 'Brands',
-              viewUrl: '/assets/sampleexternal.html#brands'
+              viewUrl: 'http://todomvc.com/examples/angularjs/#/'
             },
             {
               category: 'Overview',
               pathSegment: 'commerce',
               label: 'Commerce Settings',
-              viewUrl: '/assets/sampleexternal.html#commerce'
+              viewUrl: 'http://ssvnodemean.herokuapp.com/'
             },
             {
               category: 'Overview',
@@ -333,34 +333,44 @@ Luigi.setConfig({
               category: 'Overview',
               pathSegment: 'reports',
               label: 'Coupon Reports',
-              loadingIndicator: {
-                hideAutomatically: false
-              },
-              viewUrl: '/assets/sampleexternal.html#reports'
+              viewUrl: 'https://test-coupon-admin.scapp.io/'
             },
             {
+              category: 'Development',
               pathSegment: 'development',
               label: 'Development',
               viewUrl: '/assets/sampleexternal.html#development'
             },
             {
+              category: 'Administration',
               pathSegment: 'administration',
               label: 'Administration',
               viewUrl: '/assets/sampleexternal.html#administration'
             },
           ]
-        },
-        {
-          pathSegment: 'projects',
-          label: 'Projects1',
-          viewUrl: '/sampleapp.html#/projects/overview',
-          children: projectsNavProviderFn
-        },
-        {
-          pathSegment: 'settings',
-          label: 'Settings',
-          viewUrl: '/sampleapp.html#/settings'
-        },
+        }
+        //,
+        // {
+        //   pathSegment: 'projects',
+        //   label: 'Projects1',
+        //   viewUrl: '/sampleapp.html#/projects/overview',
+        //   children: projectsNavProviderFn
+        // },
+        // {
+        //   pathSegment: 'settings',
+        //   label: 'Settings',
+        //   viewUrl: '/sampleapp.html#/settings'
+        // },
+        // {
+        //   pathSegment: 'styleguide',
+        //   label: 'Styleguide',
+        //   viewUrl: '/sampleapp.html#/styleguide'
+        // },
+        // {
+        //   pathSegment: 'cuponadmin',
+        //   label: 'Cupon Admin',
+        //   viewUrl: '/sampleapp.html#/cuponadmin'
+        // }
       ]
     }
   },

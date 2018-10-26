@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -23,6 +24,8 @@ import { RestrictedComponent } from './restricted/restricted.component';
 import { LuigiContextService } from './services/luigi-context.service';
 import { GroupSettingsComponent } from './project/users/groups/group-details/group-settings/group-settings.component';
 import { DynamicComponent } from './project/dynamic/dynamic.component';
+import { StyleGuideComponent } from './style-guide/style-guide.component';
+import { CuponadminComponent } from './cuponadmin/cuponadmin.component';
 
 @NgModule({
   declarations: [
@@ -44,9 +47,11 @@ import { DynamicComponent } from './project/dynamic/dynamic.component';
     OverviewComponent,
     RestrictedComponent,
     GroupSettingsComponent,
-    DynamicComponent
+    DynamicComponent,
+    StyleGuideComponent,
+    CuponadminComponent
   ],
-  imports: [BrowserModule, FormsModule, AppRoutingModule],
+  imports: [BrowserModule, FormsModule, AppRoutingModule, HttpClientModule],
   providers: [LuigiContextService],
   bootstrap: [AppComponent]
 })

@@ -49,9 +49,38 @@ LuigiClient.uxManager().hideLoadingIndicator();</pre>
 <div class="section-spacer"></div>
 <a name="coupons"></a>
 <section class="fd-section">
-  <div class="fd-panel">
-    <p><strong>Coupons</strong></p>
-  </div>
+  <div class="fd-ui fd-ui--fundamental">
+    <div class="fd-page">
+	<header class="fd-page__header">
+    <div class="fd-action-bar">
+        <div class="fd-action-bar__header">
+          <h1 class="fd-action-bar__title">
+              Cupons
+          </h1>
+          <p class="fd-action-bar__description">Optional page intro lorem ipsum dolor</p>
+        </div>
+        
+    </div>
+</header>
+
+	<div class="fd-page__content">
+    <section class="fd-section">
+        <p class="fd-has-text-align-center fd-has-font-style-italic">
+            <strong>There are no Cupons available.</strong>
+        </p>
+        <p class="fd-has-text-align-center">
+            <button class="fd-button fd-button--l sap-icon--add">
+                Add New Cupon
+            </button>
+        </p>
+    </section>
+</div>
+
+</div>
+
+</div>
+
+
 </section>
 
 <div class="section-spacer"></div>
@@ -121,18 +150,18 @@ LuigiClient.uxManager().hideLoadingIndicator();</pre>
 // If Node has loadingIndicator.hideAutomatically set to false, we need to manually 
 // trigger LuigiClient.uxManager().hideLoadingIndicator();
 
-console.info('Delaying loading indicator for demo purposes');
+// console.info('Delaying loading indicator for demo purposes');
 
-function demoLoadingIndicator() {
-  LuigiClient.uxManager().showLoadingIndicator();
-  hideLoadingIndicator();
-}
-function hideLoadingIndicator() {
-  setTimeout(function(){
-    LuigiClient.uxManager().hideLoadingIndicator();
-  }, 3000);
-}
-hideLoadingIndicator();
+// function demoLoadingIndicator() {
+//   LuigiClient.uxManager().showLoadingIndicator();
+//   hideLoadingIndicator();
+// }
+// function hideLoadingIndicator() {
+//   setTimeout(function(){
+//     LuigiClient.uxManager().hideLoadingIndicator();
+//   }, 3000);
+// }
+// hideLoadingIndicator();
 </script>
 
 </body>

@@ -5,22 +5,35 @@ body {
   position: absolute;
   background: #fff;
 }
-
+.fd-section .fd-page__header {
+    padding-left: 0;
+    padding-right: 0;
+}
 .fd-panel {
   padding: 15px;
+}
+
+.fd-page__header {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /* Header customization */
 .fd-global-nav .fd-global-nav__logo {
   background: url('/assets/img/SAAS_Logo_Rechteck_300_120_retina.png') no-repeat 0 0;
 }
-.fd-global-nav__product-name,.fd-global-nav__product-name a {
-  color: #97a3af;font-size: 20px;
+
+.fd-global-nav__product-name,
+.fd-global-nav__product-name a {
+  color: #97a3af;
+  font-size: 20px;
 }
-.fd-global-nav__product-name a{
+
+.fd-global-nav__product-name a {
   position: relative;
   font-weight: 400;
 }
+
 .fd-global-nav__product-name a::before {
   content: "";
   height: 12px;
@@ -31,83 +44,96 @@ body {
   top: 50%;
   margin-top: -6px;
 }
-@media screen and (min-width: 1024px){
-  .fd-global-nav .fd-global-nav__logo { 
+
+@media screen and (min-width: 1024px) {
+  .fd-global-nav .fd-global-nav__logo {
     background-size: auto 27px;
-    width: 140px;
+    width: 47px;
   }
 }
+
 .fd-ui__header {
-    box-shadow: 1px 1px 9px rgb(0,0,0,0.1);
-    -webkit-box-shadow: 1px 1px 9px rgb(0,0,0,0.1);
-    -moz-box-shadow: 1px 1px 9px rgb(0,0,0,0.1);
+  box-shadow: 1px 1px 9px rgb(0, 0, 0, 0.1);
+  -webkit-box-shadow: 1px 1px 9px rgb(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 1px 9px rgb(0, 0, 0, 0.1);
 }
 
 /* sidebar */
 .fd-app__sidebar {
-    box-shadow: 1px 0px 3px rgba(0,0,0,0.1);
-    -webkit-box-shadow: 1px 0px 3px rgba(0,0,0,0.1);
-    -moz-box-shadow: 1px 0px 3px rgba(0,0,0,0.1);
+  box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.1);
 }
+
 .fd-app__sidebar,
 .fd-side-nav {
-    background-color: #fff !important
+  background-color: #fff !important
 }
+
 .fd-side-nav__title {
-    background: none !important;
+  background: none !important;
 }
-div.fd-side-nav__group .fd-side-nav__link, 
-div.fd-side-nav__group .fd-side-nav__sublink{
-    color:#333;
+
+div.fd-side-nav__group .fd-side-nav__link,
+div.fd-side-nav__group .fd-side-nav__sublink {
+  color: #333;
 }
+
 div.fd-side-nav__group .fd-side-nav__link:hover {
-    color: #0f6eca;
-    background: #fff !important;
+  color: #0f6eca;
+  background: #fff !important;
 }
+
 div.fd-side-nav__group .fd-side-nav__link.is-selected,
 div.fd-side-nav__group .fd-side-nav__link.is-expanded,
 div.fd-side-nav__group .fd-side-nav__sublink.is-selected,
-div.fd-side-nav__group  .fd-side-nav__sublink.is-expanded{
-    background: #fff !important;
-    font-weight: 700;
-    border-left: #0f6eca solid 2px;
-    color:#111;
+div.fd-side-nav__group .fd-side-nav__sublink.is-expanded {
+  background: #fff !important;
+  font-weight: 700;
+  border-left: #0f6eca solid 2px;
+  color: #111;
 }
 
 /* navigation */
 .fd-global-nav .fd-global-nav__group {
-    align-items: flex-end;
+  align-items: flex-end;
 }
+
 .fd-global-nav .fd-global-nav__btn {
-    color: #333;
-    position: relative;
-    padding-bottom: 15px;
-    border:0 none;
-    background: none;
+  color: #333;
+  position: relative;
+  padding-bottom: 15px;
+  border: 0 none;
+  background: none;
 }
-.fd-global-nav .fd-global-nav__btn:active, 
-.fd-global-nav .fd-global-nav__btn.is-active, 
+
+.fd-global-nav .fd-global-nav__btn:active,
+.fd-global-nav .fd-global-nav__btn.is-active,
 .fd-global-nav .fd-global-nav__btn.is-selected,
 .fd-global-nav .fd-global-nav__btn.is-pressed {
-    color: #111;
-    background-color: transparent;
-    border: 0;
-    font-weight: 700;
+  color: #111;
+  background-color: transparent;
+  border: 0;
+  font-weight: 700;
+  box-shadow: 0 0 0;
+  -webkit-box-shadow: 0 0 0;
+  -moz-box-shadow: 0 0 0;
 }
 
 .fd-global-nav__actions .fd-global-nav__btn.is-selected::after {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 4px;
-    background: #0f6eca;
-    bottom: 0;
-    left: 50%;
-    width: 60px;
-    margin-left: -30px;
-    border-radius: 12px 12px 0 0;
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 4px;
+  background: #0f6eca;
+  bottom: 0;
+  left: 50%;
+  width: 60px;
+  margin-left: -30px;
+  border-radius: 12px 12px 0 0;
 }
+
 .fd-global-nav .fd-global-nav__btn.fd-popover__control::after {
-    display: none;
-    background: none;
+  display: none;
+  background: none;
 }

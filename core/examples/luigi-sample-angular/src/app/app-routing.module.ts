@@ -15,12 +15,16 @@ import { ChildNode1Component } from './project/default-child/dps1/child-node-1.c
 import { OverviewComponent } from './overview/overview.component';
 import { RestrictedComponent } from './restricted/restricted.component';
 import { DynamicComponent } from './project/dynamic/dynamic.component';
+import { StyleGuideComponent } from './style-guide/style-guide.component';
+import { CuponadminComponent } from './cuponadmin/cuponadmin.component';
 
 const routes: Routes = [
   { path: 'overview', component: OverviewComponent },
   { path: 'settings', component: SettingsComponent },
+  { path: 'styleguide', component: StyleGuideComponent },
+  { path: 'cuponadmin', component: CuponadminComponent },
   { path: 'restricted', component: RestrictedComponent },
-  { path: 'projects/:projectId', component: ProjectComponent },
+  // { path: 'projects/:projectId', component: ProjectComponent },
   { path: 'projects/:projectId/users', component: UsersComponent },
   {
     path: 'projects/:projectId/users/usersoverview',
