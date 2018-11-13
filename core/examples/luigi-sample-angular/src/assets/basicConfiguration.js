@@ -288,9 +288,15 @@ Luigi.setConfig({
             },
             {
               category: 'Overview',
+              pathSegment: 'external-app',
+              label: 'External App',
+              viewUrl: 'https://ssvnodemean.herokuapp.com/'
+            },
+            {
+              category: 'Overview',
               pathSegment: 'velocity',
               label: 'Velocity Templates',
-              viewUrl: 'http://ssvnodemean.herokuapp.com/'
+              viewUrl: '/assets/sampleexternal.html#velocity'
             },
             {
               category: 'Overview',
@@ -361,12 +367,12 @@ Luigi.setConfig({
         //   label: 'Settings',
         //   viewUrl: '/sampleapp.html#/settings'
         // },
-        // {
-        //   pathSegment: 'styleguide',
-        //   label: 'Styleguide',
-        //   viewUrl: '/sampleapp.html#/styleguide'
-        // },
-        // {
+        ,{
+          pathSegment: 'styleguide',
+          label: 'Styleguide',
+          viewUrl: '/sampleapp.html#/styleguide'
+        }
+        // ,{
         //   pathSegment: 'cuponadmin',
         //   label: 'Cupon Admin',
         //   viewUrl: '/sampleapp.html#/cuponadmin'
