@@ -5,9 +5,6 @@
     "lerna-changelog": "^0.8.0",
     "prettier": "^1.13.7"
   },
-  "scripts": {
-    "precommit": "./scripts/apply-prettier.sh"
-  },
   "prettier": {
     "singleQuote": true
   },
